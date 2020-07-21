@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <Script src="https://cdn.jsdelivr.net/npm/vue"></Script>
+        <title>hello word</title>
+    </head>
+    <body>
+        <div id="app">
+            <input type="text" v-model:value="message">
+            <p>{{ nama }}</p>
+            <p>{{ greet }}</p>
+        </div>
+        <script>
+            var app = new vue({
+                el : "#app",
+                methods : {
+                    greet : function (name) {
+                        retrun +name;
+                    }
+                }
+            })
+        </script>
+    </body>
+</html>
